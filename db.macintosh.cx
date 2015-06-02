@@ -1,0 +1,26 @@
+$ORIGIN macintosh.cx.
+$TTL 86400
+@	IN SOA macintosh.cx. postmaster.macintosh.cx. (
+			1 ; Serial Number
+			3h ; Refresh after 3 hours
+			1h ; Retry after 1 hour
+			1w ; Expire after 1 week
+			1h ) ; Negative caching TTL of 1 hour
+
+; Name Servers defined here 
+macintosh.cx.		IN NS mapper.macintosh.cx.
+
+; Mail Exchange servers defined here
+; ns.macintosh.cx.    IN MX 10 ns.macintosh.cx.
+
+; Define hostname -> IP{ pairs which you wish to resolve
+macintosh.cx.		IN A 192.168.1.32
+mapper			IN A 192.168.1.32
+localhost.macintosh.cx. IN A 127.0.0.1
+mapper.macintosh.cx. 	IN A 192.168.1.32
+spacewalk.macintosh.cx. IN A 192.168.1.31
+www.macintosh.cx.	IN A 192.168.1.32
+
+; Aliases
+ns		 	IN CNAME mapper
+	

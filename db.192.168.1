@@ -1,0 +1,24 @@
+$ORIGIN 1.168.192.in-addr.arpa.
+$TTL 86400
+@	IN SOA macintosh.cx. postmaster.macintosh.cx. (
+			1 ; Serial Number
+			3h ; Refresh after 3 hours
+			1h ; Retry after 1 hour
+			1w ; Expire after 1 week
+			1h ) ; Negative caching TTL of 1 hour
+
+; Name Servers defined here 
+1.168.192.in-addr.arpa. IN NS mapper.macintosh.cx.
+;@ IN PTR macintosh.cx.
+
+; Mail Exchange servers defined here
+; ns.macintosh.cx.    IN MX 10 ns.macintosh.cx.
+
+; Define hostname -> IP{ pairs which you wish to resolve
+; 32		 	IN PTR  mapper.macintosh.cx
+; 31			IN PTR  spacewalk.macintosh.cx
+32 IN PTR www.macintosh.cx.
+
+; Aliases
+; www.macintosh.cx. 	IN CNAME macintosh.cx.
+	
