@@ -1,0 +1,15 @@
+$TTL 86400 
+
+1.168.192.in-addr.arpa IN SOA mapper.macintosh.cx. postmaster.macintosh.cx. (
+				1 ; Serial
+				3h ; Refresh after 3 hours
+				1h ; Retry afer 1 hour
+				1w ; Expired after one week
+				1h ) ; Negative caching TTL of 1 hour
+
+; Name Servers defined here
+1.168.192.in-addr.arpa	IN NS mapper.macintosh.cx. 
+
+; IP -> Name mappings
+32.1.168.192.in-addr.arpa IN PTR mapper.macintosh.cx.
+31.1.168.192.in-addr.arpa IN PTR spacewalk.macintosh.cx.
